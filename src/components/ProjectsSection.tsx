@@ -12,10 +12,10 @@ function projectMapper(proj: {name:string, description:string}){
 
 function ProjectsSection(){
     return (
-        <>
+        <section className="bg-white p-8 my-8 mx-4 rounded-xl shadow-lg border-l-4 border-blue-500">
         <h2>Projects</h2>
         {projects.map(projectMapper)}
-        </>
+        </section>
     )
 }
 
