@@ -11,16 +11,17 @@ function Header() {
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center', // Ensures text within the stack is centered
-
       }}
+
     >
+
       <Stack spacing={2}>
         <Typography 
           variant="h2" // A large variant for your name
           component="h1" // Good for SEO
           sx={{ fontWeight: 'bold' }}
         >
-          Lemar
+         Hi, I'm <span>Lemar</span>
         </Typography>
         <Typography variant="h5" color="text.secondary">
           Currently @ J.P. Morgan

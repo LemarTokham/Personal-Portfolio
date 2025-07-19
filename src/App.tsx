@@ -60,7 +60,7 @@ function App() {
   
 
   return (
-    <>
+    <div>
     <Navbar openDrawer={openDrawer}/>
     <Drawer open={drawer} onClose={closeDrawer}
     >{DrawerList}</Drawer>
@@ -70,7 +70,7 @@ function App() {
     <ExperienceSection></ExperienceSection>
     <ProjectsSection></ProjectsSection>
     </Layout>
-    </>
+    </div>
 
     
   
