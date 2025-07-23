@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
+import { Chip } from '@mui/material';
 
 function Header() {
   return (
@@ -24,7 +25,7 @@ function Header() {
          Hi, I'm <span>Lemar</span>
         </Typography>
         <Typography variant="h5" color="text.secondary">
-          Currently @ J.P. Morgan
+          <Chip color='primary' label="Currently @ J.P. Morgan" />
         </Typography>
       </Stack>
     </Box>

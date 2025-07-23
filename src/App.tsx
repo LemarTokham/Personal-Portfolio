@@ -20,31 +20,24 @@ function App() {
   const [drawer, setDrawer] = useState(false)
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={closeDrawer}>
+    <Box sx={{ width: 250 }} role="presentation">
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
+          <ListItem disablePadding>
+            <ListItemButton onClick={() => console.log("hi")}>
               <ListItemIcon>
-                {index % 2 === 0 ? "Inbox": "mail"}
+                Projects
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText/>
             </ListItemButton>
           </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
+          <ListItem disablePadding>
+            <ListItemButton onClick={() => console.log("hi")}>
               <ListItemIcon>
-                {index % 2 === 0 ? "Inbox" : "mail"}
+                Experience
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText/>
             </ListItemButton>
           </ListItem>
-        ))}
       </List>
     </Box>
   );
