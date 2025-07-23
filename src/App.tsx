@@ -31,7 +31,7 @@ function App() {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton onClick={() => console.log("hi")}>
+            <ListItemButton onClick={() => console.log("hello")}>
               <ListItemIcon>
                 Experience
               </ListItemIcon>
